@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website | Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Website Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, I'm <span>Preeti Yadav</span></h1>
+                <p>Web Developer | Python Programmer</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpeg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm Preeti Yadav, a passionate Web Developer with expertise in full-stack technologies, including HTML, CSS, Bootstrap, React, and PHP. I have a keen interest in building dynamic and user-friendly websites. With a background in Computer Science, I thrive on learning new technologies and solving complex problems.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS, JavaScript</span><br>Proficient in front-end development</li>
+                            <li><span>Bootstrap</span><br>Building responsive web interfaces</li>
+                            <li><span>React.js</span><br>Creating interactive web applications</li>
+                            <li><span>Python Programming</span><br>Basic knowledge of programming logic and scripting</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Ambeytech, Delhi</span><br>Full Stack Web Developer (Sep 2024 - Present)</li>
+                            <li><span>Quizzy (Virtual)</span><br>Subject Matter Expert (Nov 2023 - Apr 2024)</li>
+                            <li><span>Code Alpha (Virtual)</span><br>Web Developer Intern (May 2023 - Jun 2023)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (B.Tech)</span><br>Computer Science & Engineering (2020 - 2024), Ashoka Institute of Technology and Management, Varanasi</li>
+                            <li><span>XII (Senior Secondary)</span><br>Science (2019), CISCE Board</li>
+                            <li><span>X (Secondary)</span><br>ICSE Board (2017)</li>
+                            <li><span>Certifications</span><br>HTML, CSS, JavaScript (Microsoft Online) <br>Python Programming (Techup Technologies)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Work Experience Section -->
+
+    <div id="services" class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h3>Ambeytech, Delhi</h3>
+                <p>Intern - Full Stack Web Development (Sep 2024 - Present)</p>
+                <p>Building websites using PHP, Bootstrap, HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h3>Quizzy (Virtual)</h3>
+                <p>Subject Matter Expert (SME) (Nov 2023 - Apr 2024)</p>
+                <p>Developed quizzes and optimized user experiences on the platform.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h3>Code Alpha (Virtual)</h3>
+                <p>Intern - Web Development (May 2023 - Jun 2023)</p>
+                <p>Worked on web development projects and gained experience with JavaScript and HTML.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+
+    <div id="portfolio" class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Temperature Converter.png" alt="Temperature Converter">
+                <div class="layer">
+                    <h3>Temperature Converter</h3>
+                    <a href="https://github.com/Preeti019/CodeAlpha_Project2_Temp_converter">View Project</a>"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/linkshort.png" alt="Link Shortener">
+                <div class="layer">
+                    <h3>Link Shortener</h3>
+                    <a href="https://github.com/Preeti019/CodeAlpha_Project1_Link--Shortner">View Project</a><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Virtual Gym Trainer.jfif" alt="Virtual Gym Trainer">
+                <div class="layer">
+                    <h3>Virtual Gym Trainer</h3>
+                    <p>Machine Learning-based fitness solution created during a techfest.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+
+    <div id="contact" class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>preeti01910@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9044933446</p>
+                <p><i class="fas fa-map-marker-alt"></i> Varanasi, India</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2024 My Website. <i class="fas fa-heart"></i> All rights reserved.</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfCkj7FGYozCgoRcPwa_tBh54C2VsXn8NAWvJUWfHGJnMsLp3FVroDrhXIj7Had0jj/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
