@@ -311,11 +311,12 @@ form input, form textarea {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     nav .fa-bars {
         display: block;
         font-size: 25px;
     }
+}
 
     nav ul {
         background: #ff004f;
@@ -346,9 +347,9 @@ form input, form textarea {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
-}
-#msg{
-    color:#616752
-    margin-top:-10px;
-    display:block;
-}
+
+    #msg {
+        color: #616752;
+        margin-top: -10px;
+        display: block;
+    }
